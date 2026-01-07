@@ -66,11 +66,11 @@ a>p {
 
 p {
     font-size: 15px;
-    margin: 10;
+    margin: 10px;
 }
 
 h2 {
-    color: var(--secondarycolor);
+    color: var(--maincolor);
 }
 
 nav>ul {
@@ -85,9 +85,12 @@ ul {
 }
 
 li {
-    padding: 10px;
     margin: 5px;
     border-radius: 5px;
+}
+
+a>p {
+    padding: 10px;
 }
 
 li:hover {
@@ -103,7 +106,46 @@ a:visited {
     color: white;
 }
 
+main {
+    margin-top: 150px;
+    /* border: #ffb7b7 solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.container {
+    justify-content: center;
+    background-color: var(--maincolor);
+}
+
+#schedule {
+    display: flex;
+}
+
+.month {
+    margin: 10px 20px;
+    padding: 0 10px;
+}
+
+.border {
+    border-top: rgba(0, 0, 0, 0.308) solid;
+    width: 33%;
+}
+
+.container {
+}
+
+h3 {
+    font-size: 65px;
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    font-size: 55px;
+    margin: 0;
+}
 
 
 
