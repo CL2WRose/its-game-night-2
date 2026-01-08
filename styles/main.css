@@ -62,6 +62,7 @@ a {
 a>p {
     margin: 0;
     white-space: nowrap;
+    padding: 10px;
 }
 
 p {
@@ -87,10 +88,6 @@ ul {
 li {
     margin: 5px;
     border-radius: 5px;
-}
-
-a>p {
-    padding: 10px;
 }
 
 li:hover {
@@ -128,12 +125,17 @@ main {
     padding: 0 10px;
 }
 
+.month>p {
+    font-size: 40px;
+}
+
+#month1 {
+    margin-right: 75px;
+}
+
 .border {
     border-top: rgba(0, 0, 0, 0.308) solid;
     width: 33%;
-}
-
-.container {
 }
 
 h3 {
@@ -162,4 +164,71 @@ footer {
     bottom: 0;
     width: 100vw;
     text-align: center;
+}
+
+@media screen and (max-width: 1235px) {
+    body {}
+
+    header {
+        flex-direction: column;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    nav {
+        margin-top: -20px;
+    }
+
+    h4 {
+        font-size: 4.45vw;
+    }
+
+    .month>p {
+        font-size: 3.25vw;
+    }
+
+    #month1 {
+        margin-right: 6vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h4 {
+        font-size: 26.75px;
+    }
+
+    .month>p {
+        font-size: 19.5px;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    header {
+        height: 265px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        margin: -5px;
+    }
+
+    main {
+        margin-top: 265px;
+    }
+
+    #schedule {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 14.8px;
+    }
 }
