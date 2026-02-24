@@ -7,7 +7,7 @@
     --maintwo: grey;
     --primaryhover: rgb(255, 110, 110);
     --tertiarycolor: rgb(255, 110, 110);
-    --tertiaryhover:  rgb(52, 165, 127);
+    --tertiaryhover: rgb(52, 165, 127);
 }
 
 @font-face {
@@ -50,6 +50,19 @@ header :nth-child(2) {
 
 header :nth-child(3) {
     text-align: right;
+}
+
+#timeSubject {
+    position: fixed;
+    top: 250px;
+    right: 15vw;
+    rotate: 20deg;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+#timeSubject>h2 {
+    color: rgba(255, 110, 110, 0.555);
 }
 
 h1 {
@@ -177,6 +190,14 @@ footer {
         font-size: 20px;
     }
 
+    #timeSubject {
+        top: 250px;
+        right: 10vw;
+        rotate: 20deg;
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+
     nav {
         margin-top: -20px;
     }
@@ -211,6 +232,14 @@ footer {
 @media screen and (max-width: 370px) {
     header {
         height: 265px;
+    }
+
+    #timeSubject {
+        top: 450px;
+        right: 15vw;
+        rotate: 20deg;
+        font-size: 20px;
+        letter-spacing: -1px;
     }
 
     ul {
